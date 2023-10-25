@@ -1,14 +1,18 @@
 <template>
   <v-app>
     <!--Header-->
-    
-    <v-main>
+    <router-view name="header"/>
+
     <!--Main-->
+    <v-main>
+      <router-view/>
     </v-main>
     
     <!--Footer-->
+    <router-view name="footer"/>
 
     <!--Navigation-->
+    <router-view name="navigation"/>
   </v-app>
 </template>
 
@@ -19,8 +23,12 @@ export default {
   components: {
   },
 
-  data: () => ({
-  }),
+  data() {
+    return {
+      timeOut: null,
+      intervalGeolocation: null,
+    };
+  },
 };
 </script>
 
