@@ -4,8 +4,7 @@
     height="100%"
     color="transparent"
   >
-    <img src="@/assets/images/logo/logo.png" height="75" />
-    <span class="logo-font">Mento !</span>
+    <span class="logo-font">Way !</span>
   </v-sheet>
 </template>
 
