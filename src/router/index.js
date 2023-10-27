@@ -4,11 +4,12 @@ import Vuex from "vuex";
 
 import main from "@/router/modules/main";
 import banner from "@/router/modules/banner";
+import meeting from "@/router/modules/meeting";
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
 
-const routes = [...main, ...banner];
+const routes = [...main, ...banner, ...meeting];
 const router = new VueRouter({
     mode: "history",
     base: process.env.BASE_URL,
