@@ -1,0 +1,198 @@
+.empty {
+    background-image: url("@/assets/images/component/cards.png");
+    background-size: 120px;
+    background-position-x: left;
+    background-position-y: center;
+}
+
+.swiper-slide {
+    width: 185px;
+}
+
+.upcoming-ellipse {
+    width: 145px;
+    height: 150px;
+
+    background: linear-gradient(180deg,
+            rgba(243, 122, 127, 0.9) 0%,
+            var(--red-col) 100%);
+    box-shadow: 0px 5px 20px -10px #f37a7f !important;
+    border-radius: 15px !important;
+}
+
+.upcoming-polygon {
+    width: 145px;
+    height: 150px;
+
+    background: linear-gradient(180deg,
+            rgba(245, 186, 85, 0.9) 0%,
+            var(--yellow-col) 100%);
+    box-shadow: 0px 5px 20px -10px var(--yellow-col) !important;
+    border-radius: 15px !important;
+}
+
+.upcoming-rectangle {
+    width: 145px;
+    height: 150px;
+
+    background: linear-gradient(180deg,
+            rgba(43, 192, 161, 0.9) 0%,
+            var(--green-col) 100%);
+    box-shadow: 0px 5px 20px -10px #2bc0a1 !important;
+    border-radius: 15px !important;
+}
+
+.upcoming-star {
+    width: 145px;
+    height: 150px;
+
+    background: linear-gradient(180deg,
+            rgba(28, 128, 223, 0.9) 0%,
+            var(--blue-col) 100%);
+    box-shadow: 0px 5px 20px -10px var(--blue-col) !important;
+    border-radius: 15px !important;
+}
+
+.none {
+    height: 150px;
+    /* width: 353px; */
+    /* height: 150px; */
+    background: linear-gradient(180deg,
+            rgba(9, 42, 73, 0.8) 0%,
+            var(--main-col-1) 100%);
+    box-shadow: 0px 5px 20px -10px #000000;
+    border-radius: 15px;
+}
+
+.ellipse {
+    position: absolute;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.rectangle-first {
+    position: absolute;
+    top: 0;
+    margin: 15px 0px 0px 0px;
+    width: 31px;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.rectangle-second {
+    position: absolute;
+    top: 0;
+    margin: 25px 10px 0px 0px;
+    width: 31px;
+    height: 31px;
+    background: rgba(217, 255, 247, 0.3);
+}
+
+.triangle-second {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    margin: 25px 15px 0px 0px;
+    border-style: solid;
+    border-width: 0 17.5px 35px 17.5px;
+    border-color: transparent transparent rgba(255, 255, 255, 0.3) transparent;
+    transform: rotate(-14.43deg);
+}
+
+.triangle-first {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    margin: 15px 0px 0px 0px;
+    border-style: solid;
+    border-width: 0 17.5px 35px 17.5px;
+    border-color: transparent transparent rgba(250, 235, 211, 0.3) transparent;
+    transform: rotate(9.24deg);
+}
+
+.star-second {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    margin: 20px 0px 0px 0px;
+    clip-path: polygon(50% 5%,
+            61% 40%,
+            98% 40%,
+            68% 62%,
+            79% 96%,
+            50% 75%,
+            21% 96%,
+            32% 62%,
+            2% 40%,
+            39% 40%);
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(-8.97deg);
+}
+
+.star-first {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    margin: 10px 0px 0px 0px;
+    clip-path: polygon(50% 5%,
+            61% 40%,
+            98% 40%,
+            68% 62%,
+            79% 96%,
+            50% 75%,
+            21% 96%,
+            32% 62%,
+            2% 40%,
+            39% 40%);
+    background: rgba(168, 213, 255, 0.3);
+    transform: rotate(3.72deg);
+}
+
+.v-tooltip__content {
+    position: absolute;
+    width: 160px;
+    height: 70px;
+    left: 86px !important;
+    top: 590px !important;
+    padding: 12px;
+    background: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: var(--main-col-1) solid 1px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.v-tooltip__content:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 8px 9px;
+    border-color: white transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -9px;
+    left: 35px;
+}
+
+.v-tooltip__content:before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 8px 9px;
+    border-color: var(--main-col-1) transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    top: -10px;
+    left: 35px;
+}
