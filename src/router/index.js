@@ -3,11 +3,12 @@ import VueRouter from "vue-router";
 import Vuex from "vuex";
 
 import main from "@/router/modules/main";
+import banner from "@/router/modules/banner";
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
 
-const routes = [...main];
+const routes = [...main, ...banner];
 const router = new VueRouter({
     mode: "history",
     base: process.env.BASE_URL,
