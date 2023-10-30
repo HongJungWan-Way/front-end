@@ -10,7 +10,7 @@
       @click="goHome()"
       style="cursor: pointer"
     >
-      Almost There
+      Way
     </span>
     <home-button color="white"></home-button>
   </v-sheet>
