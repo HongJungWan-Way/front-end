@@ -7,7 +7,7 @@
             Way
         </div>
         <v-btn @click="goManual()" id="square-btn" outlined rounded>
-            <span class="light-font main-col-1 xxxxxxl-font">?</span>
+            <span class="light-font main-col-1" style="font-size: 15px;">📑</span>
         </v-btn>
     </v-sheet>
 </template>

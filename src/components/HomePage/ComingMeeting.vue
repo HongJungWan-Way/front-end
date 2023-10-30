@@ -111,6 +111,13 @@ export default {
                 this.meetings = res;
                 this.loading = false;
             }
+        })
+        .catch((error) => {
+            console.error("API 요청 실패:", error);
+            this.meetings = []; // API 요청이 실패하면 members 배열을 비워준다.
+        })
+        .finally(() => {
+            this.loading = false; // 로딩 상태를 false로 바꿉니다.
         });
     },
 
@@ -153,5 +160,5 @@ export default {
 </script>
 
 <style scoped>
-@import "@/assets/styles/coming_meeting/coming_meeting.css";
+@import "@/assets/styles/meeting/coming_meeting/coming_meeting.css";
 </style>

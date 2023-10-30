@@ -7,9 +7,11 @@
 <script>
 export default {
   name: "HomeButton",
+
   props: {
     color: String,
   },
+  
   methods: {
     goHome() {
       this.$router.push("/");
@@ -18,4 +20,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+</style>
