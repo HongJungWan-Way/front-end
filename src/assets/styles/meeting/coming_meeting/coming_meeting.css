@@ -1,5 +1,5 @@
 .empty {
-    background-image: url("@/assets/images/component/cards.png");
+    background-image: url("@/assets/images/empty_image/cards.png");
     background-size: 120px;
     background-position-x: left;
     background-position-y: center;
